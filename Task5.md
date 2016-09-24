@@ -40,5 +40,5 @@ function Spy(target, method) {
 
 var spy = Spy(console, 'log');
 console.log('Никто не узнает, что я пишу в консоль');
-console.log('Количество вызванных алертов:', spy.count);
+console.log('Количество вызовов console.log:', spy.count);
 ```
