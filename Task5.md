@@ -29,16 +29,16 @@ console.log(spy.count) // 3
 ## Подсказка
 
 * Функции имеют контекст, входящие данные и выходящие. Убедитесь, что вы учитываете контекст, вход *и выход* функции, за которой вы шпионите.
-* Вспомните об объекте prototype
 
 ## Шаблон
 
 ```js
 function Spy(target, method) {
   // SOLUTION GOES HERE
+  
 }
 
-var spy = Spy(window, 'alert');
-alert('Никто не узнает, что я вызывал алёрт');
+var spy = Spy(console, 'log');
+console.log('Никто не узнает, что я пишу в консоль');
 console.log('Количество вызванных алертов:', spy.count);
 ```
